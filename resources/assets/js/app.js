@@ -19,46 +19,11 @@ const app = new Vue({
     el: '#app'
 });
 
-var Animal= function () {
-    if(this.constructor === Animal){
-        throw new Error("AbstractClass");
-
-    }
-}
 
 
-Animal.prototype.say=function() {
-    throw new Error("AbstractMethod");
-
-}
-
-Animal.prototype.eat=function() {
-    console.log("animal eating");
-
-}
-
-
-var Cat =function () {
-    Animal.apply(this, arguments);
-}
-
-Cat.prototype = Object.create(Animal.prototype);
-Cat.prototype.constructor = Cat;
-
-Cat.prototype.say= function(){
-    console.log("miauu");
-}
-
-var Dog =function () {
-    Animal.apply(this, arguments);
-}
-
-Dog.prototype = Object.create(Animal.prototype);
-Dog.prototype.constructor = Dog;
-
-Dog.prototype.say= function(){
-    console.log("guau");
-}
+require("./Animal");
+require("./Cat");
+require("./Dog");
 
 var cat = new Cat();
 var dog = new Dog();
