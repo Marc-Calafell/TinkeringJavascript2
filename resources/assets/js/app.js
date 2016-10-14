@@ -60,3 +60,11 @@ Dog.prototype.say= function(){
     console.log("guau");
 }
 
+var cat = new Cat();
+var dog = new Dog();
+
+cat.eat();
+dog.eat();
+
+cat.say();
+dog.say();
