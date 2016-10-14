@@ -36,3 +36,10 @@ Animal.prototype.eat=function() {
     console.log("animal eating");
 
 }
+
+
+var Cat =function () {
+    Animal.apply(this, arguments);
+}
+
+
