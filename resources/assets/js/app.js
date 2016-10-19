@@ -19,19 +19,43 @@ const app = new Vue({
     el: '#app'
 });
 
+//executar xhr utiltizant jquery
+$.ajax;
+
+$.ajax{
+    type=
+
+};
 
 
-var animalet= require("./Animal");
-var gatet = require("./Cat");
-var goset = require("./Dog");
 
 
-var animal = new animalet.Animal();
-var cat =new gatet.Cat();
-var dog =new goset.Dog();
 
-cat.eat();
-dog.eat();
 
-cat.say();
-dog.say();
+
+
+
+
+
+
+
+
+
+
+
+
+//
+// var animalet= require("./Animal");
+// var gatet = require("./Cat");
+// var goset = require("./Dog");
+//
+//
+// var animal = new animalet.Animal();
+// var cat =new gatet.Cat();
+// var dog =new goset.Dog();
+//
+// cat.eat();
+// dog.eat();
+//
+// cat.say();
+// dog.say();
