@@ -22,10 +22,16 @@ const app = new Vue({
 //executar xhr utiltizant jquery
 $.ajax;
 
-$.ajax{
-    type=
+$.ajax({
+    type: "GET",
+    url: "http://localhost:8000/apel/user",
+    data: data,
+    success: function () {
 
-};
+    }
+
+
+});
 
 
 
