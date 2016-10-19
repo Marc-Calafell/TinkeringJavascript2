@@ -20,16 +20,20 @@ const app = new Vue({
 });
 
 //executar xhr utiltizant jquery
-$.ajax;
+
+${"getuser"}
+
+
 
 $.ajax({
     type: "GET",
-    url: "http://localhost:8000/apel/user",
+    url: "http://localhost:8000/apel/user/1",
     data: data,
     success: function (result) {
         console.log("Ajax OKEY");
         console.log(result);
     }
+
 
 
 });
