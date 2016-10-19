@@ -17,6 +17,8 @@
     <div id="row">
         <div id="col-md4" >
             <button id="getuser">GetUser</button>
+
+            <input type="text" name="usuari" id="user">
         </div>
 
     </div>

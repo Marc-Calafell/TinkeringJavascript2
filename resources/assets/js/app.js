@@ -17,26 +17,29 @@ Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({
     el: '#app'
-});
+})
 
 //executar xhr utiltizant jquery
 
-${"getuser"}
+${"#getuser"}.click(function () {
 
+    $.ajax({
+        type: "GET",
+        url: "http://localhost:8000/apel/user/1",
+        data: data,
+        success: function (result) {
+            console.log("Ajax OKEY");
+            console.log(result);
+        }
 
-
-$.ajax({
-    type: "GET",
-    url: "http://localhost:8000/apel/user/1",
-    data: data,
-    success: function (result) {
-        console.log("Ajax OKEY");
-        console.log(result);
-    }
-
+    });
 
 
 });
+
+
+
+
 
 
 
