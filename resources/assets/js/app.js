@@ -21,12 +21,14 @@ const app = new Vue({
 
 
 
-require("./Animal");
-require("./Cat");
-require("./Dog");
+var animalet= require("./Animal");
+var gatet = require("./Cat");
+var goset = require("./Dog");
 
-var cat = new Cat();
-var dog = new Dog();
+
+var animal = new animalet.Animal();
+var cat =new gatet.Cat();
+var dog =new goset.Dog();
 
 cat.eat();
 dog.eat();
