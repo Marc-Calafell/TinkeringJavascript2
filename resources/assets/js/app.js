@@ -26,8 +26,9 @@ $.ajax({
     type: "GET",
     url: "http://localhost:8000/apel/user",
     data: data,
-    success: function () {
-
+    success: function (result) {
+        console.log("Ajax OKEY");
+        console.log(result);
     }
 
 
